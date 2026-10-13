@@ -21,4 +21,4 @@ git commit -m "Update project portfolio data" --allow-empty 2>/dev/null || echo 
 git push origin main
 
 echo ""
-echo "✅ Done! Site will update at https://gamer-09.github.io/wippyio/"
+echo "✅ Done! Site will update at https://wippyio.netlify.app/"

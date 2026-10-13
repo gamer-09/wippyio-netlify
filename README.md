@@ -1,6 +1,6 @@
 # wippyio
 
-**[Visit wippy →](https://gamer-09.github.io/wippyio/)** — live on GitHub Pages.
+**[Visit wippy →](https://wippyio.netlify.app/)** — live on Netlify.
 
 A personal website that displays all projects from the [storage-packed](https://github.com/gamer-09/storage-packed) vault.
 
@@ -8,7 +8,7 @@ A personal website that displays all projects from the [storage-packed](https://
 
 1. **Sync locally** — Run `node sync-projects.js` to pull project data from your storage-packed vault, slim it down, and capture screenshots.
 2. **Commit & push** — Push the changes to GitHub.
-3. **GitHub Pages** — The site auto-deploys via GitHub Actions at https://gamer-09.github.io/wippyio/
+3. **Netlify** — The site auto-deploys from GitHub at https://wippyio.netlify.app/
 
 ## Quick Start
 
@@ -33,7 +33,7 @@ bg3d.js                 ← Live 3D background (three.js via CDN)
 data/projects.json      ← Slimmed project data (synced from vault)
 data/screenshots/       ← Project screenshots and gradient fallbacks
 sync-projects.js        ← Local sync script (with Puppeteer screenshot capture)
-.github/workflows/      ← GitHub Pages deployment
+netlify.toml            ← Netlify build config (stages the static files)
 ```
 
 ## Syncing Updates
@@ -42,6 +42,6 @@ Every time you add or update a project in storage-packed:
 
 1. Run `node sync-projects.js --screenshots` in the wippyio directory
 2. Git commit and push
-3. GitHub Actions deploys the update
+3. Netlify rebuilds and deploys the update
 
 The sync script strips heavy fields, detects GitHub repos, checks public/private visibility, and captures screenshots — reducing the data by ~99%.

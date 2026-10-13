@@ -1,6 +1,6 @@
 # Build requests — Supabase setup
 
-The site is static (GitHub Pages), so requests are stored in a free
+The site is static (hosted on Netlify), so requests are stored in a free
 [Supabase](https://supabase.com) database. Visitors can **only insert**;
 only your logged-in admin account can **read** them.
 
@@ -188,7 +188,7 @@ insert. Keep the **service_role** key secret and never put it in this repo.
 
 ## 6. Deploy & test
 
-1. Commit and push. GitHub Pages redeploys automatically.
+1. Commit and push. Netlify redeploys automatically.
 2. On the live site, open the **Request** section, submit a test request.
 3. Visit **`https://<your-site>/admin.html`**, log in, and you should see it.
 

@@ -1,0 +1,6 @@
+# Netlify deployment (replaces the former GitHub Pages workflow).
+# Static site: publish only the files the site actually serves, so source files
+# (sync-projects.js, package.json, SETUP.md, .github/, etc.) stay off the web.
+[build]
+  command = "mkdir -p _site && cp index.html admin.html styles.css fonts.css app.js requests.js admin.js admin-bg.js bg3d.js supabase-config.js _site/ && cp -r data fonts _site/"
+  publish = "_site"
